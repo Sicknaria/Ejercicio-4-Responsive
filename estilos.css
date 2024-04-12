@@ -1,0 +1,116 @@
+/*BODY*/
+body{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    margin-right: auto;
+    margin-left:auto;
+    padding-right: 20px;
+    border:0;
+    width:75%;
+    background: linear-gradient(to right, rgb(147, 118, 202), rgb(238, 176, 94));
+    background-attachment: fixed;
+}
+ 
+/*CONTENEDOR PRINCIPAL*/
+.contenedor-principal {
+    margin:0px 0px;
+    width:892px;
+    height:500px;
+    padding:10px;
+    justify-content: center;
+}
+ 
+/*CONTENEDOR IZQUIERDA*/
+.contenedor-izquierda {
+    margin-right: 15px;
+    margin-left:auto;
+    float:left;
+    width:560px;
+    height: auto;
+    flex:1;
+}
+ 
+.video {
+    position: relative;
+    width:560px;
+    height: 315px;
+    max-width: 800px;
+    margin:0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+ 
+.descripcion {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.texto-grande {
+    font-size: 19px;
+}
+ 
+.texto-pequenho {
+    font-size: 15px;
+}
+ 
+.titulo-video {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+/*CONTENEDOR DERECHA*/
+.contenedor-derecha {
+    margin-left: 15px;
+    margin-right: auto;
+    float:left;
+    width: 300px;
+    flex:1;
+}
+ 
+.contenedor-derecha img {
+    display:block;
+    margin-bottom:10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+ 
+/*RESPONSIVE*/
+@media only screen and (max-width: 1230px) {
+    .contenedor-derecha {
+    width: 90%;
+    display: none;
+    }
+    .contenedor-principal {
+        margin:0px;
+        width: 560px;
+        height: auto;
+        align-items: flex-start;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+ 
+    .video {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        margin:0 auto;
+    }
+ 
+    .contenedor-video iframe {
+        width: 100%;
+        height: auto;
+    }
+    .contenedor-izquierda {
+        align-items: center;
+        margin-right:auto;
+        width:560px;
+    }
+ 
+    body {
+       
+        width: 560px;
+        height: auto;
+        align-items: flex-start;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
